@@ -5,6 +5,7 @@ html {
 body {
     background: #DAE0EA;
     font-family: 'Inter';
+    margin: 0 4rem; 
 }
 
 img {
@@ -16,11 +17,15 @@ img {
 }
 
 section {
-    display: flex;
-    width: 1000px;
-    margin: 20em auto;
+    max-width: 1000px;
+    margin: 5em auto;
     position: relative;
+
+    display: flex;
+    flex-direction: column; 
+    gap: 8rem; 
 }
+
 section:before {
     position: absolute;
     content: '';
@@ -44,13 +49,14 @@ section:before {
     flex: 1;
     display: grid;
     grid-template-areas:
-        "primary ."
-        "primary .";
+        ". ."
+        "primary primary";
     gap: 2.3rem;
 }
 
 .primary {
     grid-area: primary;
+    height: 200px;
 }
 
 h1 {
@@ -63,10 +69,11 @@ p {
 }
 
 a.cta {
-    display: inline-flex;
+    display: flex; 
     align-items: center;
-    align-self: flex-start;
+    justify-content: center;
     gap: 1em;
+
     background: #1A63DD;
     color: white;
     text-decoration: none;
@@ -74,4 +81,36 @@ a.cta {
     font-size: 1.8rem;
     font-weight: bold;
     border-radius: .25em;
+
+     /* align-self: flex-start; */
+     /* display: inline-flex; */
+}
+
+@media only screen and (min-width: 600px) {
+    
+    .rightcol {
+        grid-template-areas: 
+        "primary ."
+        "primary .";
+    }
+
+    .primary {
+        height: 100%; 
+    }
+
+    a.cta {
+        display: inline-flex;
+        align-self: flex-start; 
+        justify-content: auto;
+
+    }
+
+}
+
+@media only screen and (min-width: 1000px) {
+    section {
+        margin-top: 20em; 
+        flex-direction: row;
+        gap: 2em;
+    }
 }
