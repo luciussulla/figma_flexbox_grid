@@ -8,7 +8,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
   <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header>
     <div class="wrapper navbar">
@@ -32,7 +34,7 @@
       <div class="left col">
         <h1>recording scammers has bever been easier</h1>
         <p class="subhead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis praesentium nobis pariatur. Repellendus, fugit commodi eligendi dolorum similique esse, officiis, provident laudantium laboriosam sunt impedit. Quidem tempore perspiciatis minima beatae.</p>
-        <div class="ctn-btns">
+        <div class="cta-btns">
           <a class="gplay" href="#"><img src="assets/googleplay.svg" alt="google play"></a>
           <a class="appstore" href="#"><img src="assets/appstore.svg" alt="apple store"></a>
         </div>
@@ -40,7 +42,6 @@
 
       <div class="right-col">
         <img class="phone" src="assets/phone.svg" alt="phone illustration">
-        
       </div>
     </div>
   </section>
@@ -93,12 +94,12 @@
       </div>
 
       <div class="testimonial-info">
-          <img class="author-pick" src="asset/person.jpg" alt="customer quote">
+          <img class="author-pick" src="assets/person.jpg" alt="customer quote">
           <div class="author">
             <strong>Jane Doe</strong>
             <a href="#">https://somecompeny</a>
 
-            <ul>
+            <ul class="social-nav">
               <li>
                 <a href="#">
                   <svg viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -119,11 +120,40 @@
                 </a>
               </li>
             </ul>
-            
+
           </div><!-- author -->
         </div><!-- testimonial info -->
     </section>
   </div>
+
+  <footer>
+    <div class="wrapper">
+        <div class="footer-header">
+            <a href="#" class="logo black">recall</a>
+
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#" class="active">home</a></li>
+                    <li><a href="#">features</a></li>
+                    <li><a href="#">support</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="cta-btns">
+            <a href="#" class="gplay"><img src="assets/googleplay.svg" alt="google play"></a>
+            <a href="#" class="appstore"><img src="assets/appstore.svg" alt="applestore"></a>
+        </div>
+
+        <nav class="secondary-nav">
+            <ul>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul> 
+        </nav>
+
+    </div>
+</footer>
 
 </body>
 </html>
